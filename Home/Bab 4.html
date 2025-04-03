@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Bab 4: Data dan Pembahasan</title>
+    <link rel="icon" type="image/x-icon" href="/Image/Logo-Krismit-Transparan.ico">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #d7d6ee;
+        }
+
+        header {
+            background-image: url("/Image/v1059-046c.jpg");
+            background-attachment: fixed;
+            background-size: contain;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            margin: 0;
+            border-radius: none;
+            width: 200;
+            height: 200px;
+            object-fit: contain;
+            align-self: center;
+            margin-bottom: 20px;
+            align-self: center;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            margin-top: auto;
+            border: 1px solid black;
+            margin-bottom: auto;
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: default;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }}
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Bab 4: Data dan Pembahasan</h1>
+    </header>
+
+    <nav>
+        <a href="/Index.html">Home</a>
+        <a href="/Home/Bab 1.html">Bab 1: Pendahuluan</a>
+        <a href="/Home/Bab 2.html">Bab 2: Tinjauan Pustaka</a>
+        <a href="/Home/Bab 3.html">Bab 3: Pembuatan Projek</a>
+        <a href="/Home/Bab 4.html">Bab 4: Data dan Pembahasan</a>
+        <a href="/Home/Bab 5.html">Bab 5: Penutup</a>
+    </nav>
+<br>
+<h1 style="text-align: center;">Laporan Akhir Project Mekatronika</h1>
+<p align="center"><img src="/Image/Logo-Krismit-Transparan.png"></P>
+    <br>
+    <section id="bab1">
+        <h2>Bab 4: Data dan Pembahasan</h2>
+        <div class="container">
+            <h3>4.1 Analisa</h3>
+            <h3>4.1.1 Gambar Rangkaian Elektronika</h3>
+            <img src="/Image/Rangkaian Fire.jpg" alt="Gambar Rangkaian">
+            <img src="/Image/Rangkaian IR.jpg" alt="Gambar Rangkaian">
+<h3>4.1.2 Keterangan Rangkaian</h3>
+<h3>IR Proximity</h3>
+<p><b>IC LM358:</b></p>
+<p>- <b>Pin 1 (OUTPUT1):</b> Terhubung ke anoda buzzer.</p>
+<p>- <b>Pin 2 (INPUT1-):</b> Terhubung ke kaki tengah potensiometer (VR1).</p>
+<p>- <b>Pin 3 (INPUT1+):</b> Terhubung ke anoda fotodioda dan resistor 10kΩ.</p>
+<p>- <b>Pin 4 (VEE/GND):</b> Terhubung ke arus negatif (GND).</p>
+<p>- <b>Pin 8 (VCC):</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>Buzzer:</b></p>
+<p>- <b>Anoda:</b> Terhubung ke Pin 1 IC LM358 dan anoda LED indikator.</p>
+<p>- <b>Katoda:</b> Terhubung ke arus negatif (GND).</p>
+
+<p><b>Fotodioda:</b></p>
+<p>- <b>Anoda:</b> Terhubung ke Pin 3 IC LM358 dan resistor 10kΩ.</p>
+<p>- <b>Katoda:</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>LED Inframerah (IR LED):</b></p>
+<p>- <b>Anoda:</b> Terhubung ke arus positif (+VCC).</p>
+<p>- <b>Katoda:</b> Terhubung ke resistor 330Ω.</p>
+
+<p><b>Potensiometer (VR1):</b></p>
+<p>- <b>Kaki Tengah:</b> Terhubung ke Pin 2 IC LM358.</p>
+<p>- <b>Kaki Kanan:</b> Terhubung ke arus negatif (GND).</p>
+<p>- <b>Kaki Kiri:</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>Resistor 10kΩ:</b></p>
+<p>- <b>Salah satu kaki:</b> Terhubung ke anoda fotodioda.</p>
+<p>- <b>Kaki lainnya:</b> Terhubung ke arus negatif (GND).</p>
+
+<p><b>Resistor 330Ω:</b></p>
+<p>- <b>Salah satu kaki:</b> Terhubung ke katoda IR LED.</p>
+<p>- <b>Kaki lainnya:</b> Terhubung ke arus negatif (GND).</p>
+<br>
+
+<h3>Fire Sensor</h3>
+<p><b>IC LM358:</b></p>
+<p>- <b>Pin 1 (OUTPUT1):</b> Terhubung ke arus positif pada rangkaian flip flop.</p>
+<p>- <b>Pin 2 (INPUT1-):</b> Terhubung ke kaki tengah Potensiometer.</p>
+<p>- <b>Pin 3 (INPUT1+):</b> Terhubung ke salah satu kaki Thermistor NTC</p>
+<p>- <b>Pin 4 (VEE/GND):</b> Terhubung ke arus negatif (GND).</p>
+<p>- <b>Pin 8 (VCC):</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>Thermistor NTC:</b></p>
+<p>- <b>Kaki 1:</b> Terhubung ke Pin 3 IC LM358 dan Resistor 10kΩ.</p>
+<p>- <b>Kaki 2:</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>Potensiometer (VR1):</b></p>
+<p>- <b>Kaki Tengah:</b> Terhubung ke Pin 2 IC LM358.</p>
+<p>- <b>Kaki Kanan:</b> Terhubung ke arus negatif (GND).</p>
+<p>- <b>Kaki Kiri:</b> Terhubung ke arus positif (+VCC).</p>
+
+<p><b>Resistor 10kΩ:</b></p>
+<p>- <b>Salah satu kaki:</b> Terhubung ke salah satu kaki Thermistor NTC.</p>
+<p>- <b>Kaki lainnya:</b> Terhubung ke arus negatif (GND).</p>
+<br>
+
+<h3>Flip Flop</h3>
+<p><b>Transistor BC547:</b></p>
+<p>- <b>Emitor:</b> Terhubung ke arus negatif (GND).</p>
+<p>- <b>Base:</b> Terhubung ke kaki negatif kapasitor elektrolit.</p>
+<p>- <b>Collector:</b> Terhubung ke kaki positif kapasitor elektrolit dan kaki anoda LED.</p>
+
+<p><b>Resistor 470Ω:</b></p>
+<p>- <b>Kaki 1:</b> Terhubung ke kaki 1 IC LM358 pada rangkaian Fire Sensor.</p>
+<p>- <b>Kaki 2:</b> Terhubung ke kaki anoda LED.</p>
+
+<p><b>Resistor 10kΩ:</b></p>
+<p>- <b>Kaki 1:</b> Terhubung ke kaki 1 IC LM358 pada rangkaian Fire Sensor.</p>
+<p>- <b>Kaki 2:</b> Terhubung ke kaki basis transistor.</p>
+
+<p><b>Electrolyte Capasitor 100µF:</b></p>
+<p>- <b>Anoda:</b> Terhubung ke kaki katoda LED dan kaki kolektor pada Transistor.</p>
+<p>- <b>Katoda:</b> Terhubung ke kaki basis Transistor lainnya.</p>
+
+<p><b>LED:</b></p>
+<p>- <b>Anoda:</b> Terhubung ke salah satu kaki dari resistor 470Ω.</p>
+<p>- <b>Katoda:</b> Terhubung ke kaki anoda ELCO dan kaki kolektor transistor.</p>
+<br>
+<h3>4.2 Hasil</h3>
+<h3>4.2.1 Timeline dan Hasil</h3>
+<table>
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Tanggal</th>
+            <th>Berhasil/Gagal</th>
+            <th style="width: 40% ;">Hasil yang didapatkan</th>
+            <th>Kesalahan</th>
+            <th>Pembetulan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>24 Agustus 2024</td>
+            <td>Berhasil</td>
+            <td>Menemukan ide dan sketsa awal mengenai sebuah toko yang menggunakan rangkaian IR Proximity, Fire Sensor, dan Flip-flop.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>8 September 2024</td>
+            <td>Berhasil</td>
+            <td>Membeli bahan untuk rangkaian.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>29 Januari 2025</td>
+            <td>Berhasil</td>
+            <td>Maket sudah selesai dan sesuai dengan desain yang diinginkan.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>24 Februari 2025</td>
+            <td>Berhasil</td>
+            <td>Rangkaian Fire Sensor dan Flip-flop sudah berfungsi dengan baik.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>24 Februari 2025</td>
+            <td>Gagal</td>
+            <td>Rangkaian IR Proximity tidak dapat bekerja dengan konsisten.</td>
+            <td>Peletakan Photodioda dan IR LED kurang tepat</td>
+            <td>Memberikan jarak yang sesuai untuk Photodioda dan IR LED</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>27 Februari - 3 Maret 2025</td>
+            <td>Berhasil</td>
+            <td>Mempresentasikan hasil kepada guru penguji.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>2 April 2025</td>
+            <td>Berhasil</td>
+            <td>Memperbaiki projek sesuai dengan saran guru.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>2 April 2025</td>
+            <td>Berhasil</td>
+            <td>Memperbaiki projek sesuai dengan saran guru.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>7 April 2025</td>
+            <td>Berhasil</td>
+            <td>Presentasi perbaikan kepada guru penguji.</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+<h3>4.2.2 Hasil Percobaan</h3>
+        <p style="font-size: large;">Fire Sensor dan Flip-Flop: Rangkaian bekerja sesuai harapan pada percobaan pertama, kemudian rangkaian tersebut dipermudah dengan dikurangi kabel untuk mempermudah perbaikan.
+        </p>
+        <p style="font-size: large;">IR Proximity: Rangkaian tidak dapat bekerja dengan baik pada percobaan pertama, tetapi setelah memperbaiki peletakan Photodioda dan IR LED, rangkaian dapat bekerja dengan baik karena jarak Photodioda dan IR LED yang tidak sesuai. Pada percobaan kedua, rangkaian dapat bekerja dengan baik.</p>
+        <h3>4.3 Kelebihan dan Kekurangan Rangkaian</h3>
+        <p>
+            <b>Kelebihan Fire Sensor dan Flip-flop</b>
+            <ul>
+                <li>Rangkaian dapat bekerja dengan baik.</li>
+                <li>Rangkaian dapat memberikan peringatan kepada orang-orang sekitar.</li>
+                <li>Rangkaian dapat mencegah kebakaran menjadi lebih parah.</li></ul>
+        </p>
+        <p>
+            <b>Kekurangan Fire Sensor dan Flip-flop</b>
+            <ul>
+                <li>Rangkaian tersebut adalah hasil campuran dua rangkaian sehingga rangkaian tersebut lumayan rumit.</li>
+                <li>Orang yang tidak melihat flip-flop tidak akan mengetahui adanya kebakaran.</li></ul>
+        </p>
+        <p>
+            <b>Kelebihan IR Proximity Sensor</b>
+            <ul>
+                <li>Rangkaian dapat bekerja dengan baik.</li>
+                <li>Rangkaian dapat mendeteksi adanya pelanggan yang datang.</li></ul>
+        </p>
+        <p>
+            <b>Kekurangan IR Proximity Sensor</b>
+            <ul>
+                <li>Rangkaian tersebut cukup rumit dan susah untuk diperbaiki.</li>
+                <li>Rangkaian tidak dapat mendeteksi pelanggan yang datang jika Photodioda dan IR LED tidak terletak di jarak yang tepat.</li></ul>
+        <h3>4.4 Evaluasi Diri</h3>
+        <p style="font-size: large;">Saya merasa sangat senang dan puas dengan hasil akhir dari projek ini. Saya juga merasa sangat bersyukur karena projek ini dapat berjalan dengan baik dan sesuai dengan harapan saya. Saya juga sangat berterima kasih kepada guru-guru yang telah membantu saya dalam menyelesaikan projek ini.</p>
+        </div>
+    </section>
+
+</body>
